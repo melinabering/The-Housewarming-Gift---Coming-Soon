@@ -1,0 +1,287 @@
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+header.cover {
+  height: 100%;
+  background: url("../img/BG.jpg") top center no-repeat;
+  display: block;
+  color: rgba(235, 208, 165, 0.85);
+}
+
+header.cover .overlay {
+  background: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  padding: 10% 0;
+}
+
+header.cover h1, header.cover h3, header.cover p {
+  color: rgba(235, 208, 165, 0.75);
+}
+
+header.cover img {
+  max-width: 320px;
+}
+
+header.cover .btn-outline-secondary {
+  border: 2px solid rgba(235, 208, 165, 0.75);
+  color: rgba(235, 208, 165, 0.75);
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+header.cover .btn-outline-secondary:hover {
+  border: 2px solid rgba(235, 208, 165, 0.75) !important;
+  background-color: rgba(235, 208, 165, 0.75) !important;
+  color: #000 !important;
+}
+
+.section-content {
+  padding: 20px;
+}
+
+.section-content img {
+  display: block !important;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.consumer h2, .consumer .section-content {
+  color: #77531a;
+}
+
+.consumer ol, .consumer ul, .consumer dl {
+  padding-left: 20px;
+}
+
+.consumer .row > div:last-child {
+  background: url("../img/home.jpeg") center center no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  display: none;
+}
+
+.consumer .row > div:last-child .overlay {
+  display: block;
+  background: rgba(235, 208, 165, 0.5);
+  min-height: inherit;
+  margin: 0 -15px;
+}
+
+.white-label h2, .white-label .section-content {
+  color: #264a4f;
+}
+
+.white-label ol, .white-label ul, .white-label dl {
+  padding-left: 20px;
+}
+
+.white-label .row > div:first-child {
+  background: url("../img/white-label.jpeg") center bottom no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  display: none;
+}
+
+.white-label .row > div:first-child .overlay {
+  display: block;
+  background: rgba(71, 139, 148, 0.5);
+  min-height: inherit;
+  margin: 0 -15px;
+}
+
+.subscribe {
+  background: url("../img/banner-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.subscribe h4 {
+  color: #ebd0a5;
+}
+
+.subscribe .btn-outline-secondary, .subscribe .form-control {
+  border: 2px solid rgba(235, 208, 165, 0.75) !important;
+  color: rgba(235, 208, 165, 0.75);
+  background: transparent;
+  height: 50px;
+}
+
+.subscribe .form-control {
+  color: white !important;
+  text-align: left;
+}
+
+.subscribe .btn-outline-secondary:hover {
+  border: 2px solid rgba(235, 208, 165, 0.75) !important;
+  background-color: rgba(235, 208, 165, 0.75) !important;
+  color: #000 !important;
+}
+
+.subscribe .row div label {
+  color: #ebd0a5;
+}
+
+.subscribe #mc_embed_signup {
+  background: transparent !important;
+}
+
+.thankyou {
+  height: 100vh;
+  background: url("../img/BG.jpg") top center no-repeat;
+  display: block;
+  color: rgba(235, 208, 165, 0.85);
+}
+
+.thankyou .overlay {
+  background: rgba(0, 0, 0, 0.65);
+  height: inherit;
+  padding: 10% 0;
+}
+
+.thankyou h1, .thankyou h3, .thankyou p {
+  color: rgba(235, 208, 165, 0.75);
+}
+
+.thankyou img {
+  max-width: 320px;
+}
+
+.thankyou p {
+  color: #ebd0a5;
+  text-align: center !important;
+}
+
+.thankyou h4 {
+  color: #ebd0a5;
+}
+
+.thankyou .btn-outline-secondary, .thankyou .form-control {
+  border: 2px solid rgba(235, 208, 165, 0.75) !important;
+  color: rgba(235, 208, 165, 0.75);
+  background: transparent;
+  height: 50px;
+}
+
+.thankyou .form-control {
+  color: white !important;
+  text-align: left;
+}
+
+.thankyou .btn-outline-secondary:hover {
+  border: 2px solid rgba(235, 208, 165, 0.75) !important;
+  background-color: rgba(235, 208, 165, 0.75) !important;
+  color: #000 !important;
+}
+
+.thankyou .row div label {
+  color: #ebd0a5;
+}
+
+.thankyou #mc_embed_signup {
+  background: transparent !important;
+}
+
+footer {
+  background: #478b94;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header.cover {
+    height: 100vh;
+    background: url("../img/BG.jpg") top center no-repeat;
+    display: block;
+    color: rgba(235, 208, 165, 0.85);
+  }
+  header.cover .overlay {
+    background: rgba(0, 0, 0, 0.65);
+    height: inherit;
+    padding: 10% 0;
+  }
+  header.cover h1, header.cover h3, header.cover p {
+    color: rgba(235, 208, 165, 0.75);
+  }
+  header.cover img {
+    max-width: 320px;
+  }
+  header.cover .btn-outline-secondary {
+    border: 2px solid rgba(235, 208, 165, 0.75);
+    color: rgba(235, 208, 165, 0.75);
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  header.cover .btn-outline-secondary:hover {
+    border: 2px solid rgba(235, 208, 165, 0.75) !important;
+    background-color: rgba(235, 208, 165, 0.75) !important;
+    color: #000 !important;
+  }
+  .section-content {
+    padding: 50px;
+  }
+  .section-content img {
+    display: none !important;
+    width: 100%;
+  }
+  .consumer h2, .consumer .section-content {
+    color: #77531a;
+  }
+  .consumer ol, .consumer ul, .consumer dl {
+    padding-left: 20px;
+  }
+  .consumer .row > div:last-child {
+    background: url("../img/home.jpeg") center center no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    display: block;
+  }
+  .consumer .row > div:last-child .overlay {
+    display: block;
+    background: rgba(235, 208, 165, 0.5);
+    min-height: inherit;
+    margin: 0 -15px;
+  }
+  .white-label h2, .white-label .section-content {
+    color: #264a4f;
+  }
+  .white-label ol, .white-label ul, .white-label dl {
+    padding-left: 20px;
+  }
+  .white-label .row > div:first-child {
+    background: url("../img/white-label.jpeg") center bottom no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    display: block;
+  }
+  .white-label .row > div:first-child .overlay {
+    display: block;
+    background: rgba(71, 139, 148, 0.5);
+    min-height: inherit;
+    margin: 0 -15px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .section-content {
+    padding: 50px;
+  }
+  .section-content img {
+    display: none !important;
+    width: 100%;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .section-content {
+    padding: 50px;
+  }
+  .section-content img {
+    display: none !important;
+    width: 100%;
+  }
+}

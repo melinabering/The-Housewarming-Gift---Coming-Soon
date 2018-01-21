@@ -1,0 +1,426 @@
+//
+// Color system
+//
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #f7f7f9 !default;
+$gray-300: #eceeef !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #919aa1 !default;
+$gray-700: #55595c !default;
+$gray-800: #343a40 !default;
+$gray-900: #1a1a1a !default;
+$black:    #000 !default;
+
+$blue:    #478b94 !default;
+$beige:   #ebd0a5 !default;		
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #d9534f !default;
+$orange:  #fd7e14 !default;
+$yellow:  #f0ad4e !default;
+$green:   #4BBF73 !default;
+$teal:    #20c997 !default;
+$cyan:    #1F9BCF !default;
+
+$primary:       $blue !default;
+$secondary:     $beige !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $white !default;
+$dark:          $gray-800 !default;
+
+
+$screen-sm-min: 768px;
+
+/* Medium devices (desktops, 992px and up) */
+$screen-md-min: 992px;
+
+/* Large devices (large desktops, 1200px and up) */
+$screen-lg-min: 1200px;
+
+// Body
+
+$body-color:                $gray-600 !default;
+
+// Components
+
+$border-radius:               0 !default;
+$border-radius-lg:            0 !default;
+$border-radius-sm:            0 !default;
+
+// Fonts
+
+$font-family-sans-serif:      "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$font-size-base:              0.875rem !default;
+
+$h1-font-size:                2rem !default;
+$h2-font-size:                1.75rem !default;
+$h3-font-size:                1.5rem !default;
+$h4-font-size:                1.25rem !default;
+$h5-font-size:                1rem !default;
+$h6-font-size:                0.75rem !default;
+
+$headings-font-weight:        600 !default;
+$headings-color:              $gray-900 !default;
+
+// Tables
+
+$table-border-color:          rgba(0, 0, 0, 0.05) !default;
+
+// Buttons
+
+$input-btn-padding-y:         0.75rem !default;
+$input-btn-padding-x:         2rem !default;
+
+$input-btn-padding-y-sm:      .5rem !default;
+$input-btn-padding-x-sm:      1rem !default;
+
+$input-btn-padding-y-lg:      2rem !default;
+$input-btn-padding-x-lg:      3rem !default;
+
+$btn-font-weight:             600 !default;
+
+// Forms
+
+$input-bg:                              $gray-200 !default;
+$input-disabled-bg:                     $gray-300 !default;
+
+$input-group-addon-bg:                  $gray-300 !default;
+
+
+// Breadcrumbs
+
+$breadcrumb-bg:                     transparent !default;
+
+header.cover{
+	height:100%;
+	background:	 url('../img/BG.jpg') top center no-repeat;
+	display: block;
+	color: rgba($secondary,0.85);
+
+	.overlay{
+		background: rgba($black,0.65);
+		height: 100%;
+		padding: 10% 0; 
+	}
+
+	h1, h3, p{
+		color: rgba($secondary,0.75);
+	}
+
+	img{
+		max-width: 320px;
+	}
+
+	.btn-outline-secondary{
+		border:2px solid rgba($secondary,0.75);
+		color:rgba($secondary,0.75);
+		margin-right:15px;
+		margin-left:15px;
+	}
+
+	.btn-outline-secondary:hover{
+		border:2px solid rgba($secondary,0.75) !important;
+		background-color:rgba($secondary,0.75) !important;
+		color:$black !important;
+	}
+}
+
+
+.section-content{
+		padding:20px;
+
+		img{
+			display: block !important;
+			width: 100%;
+			margin-bottom: 20px;
+
+		}
+	}
+
+.consumer{
+	h2,.section-content{
+		color: darken($secondary,50%);
+	}
+
+	ol, ul, dl{
+		padding-left:20px;
+	}
+	.row > div:last-child{
+		background:url("../img/home.jpeg") center center no-repeat;
+		background-size: cover;
+		min-height: 50vh;
+		display: none;
+
+			.overlay{
+				display: block;
+				background: rgba($secondary,0.5);
+				min-height: inherit;
+				margin:0 -15px;
+			}
+	}
+}
+
+.white-label{
+	h2,.section-content{
+		color: darken($primary,20%);
+	}
+	ol, ul, dl{
+		padding-left:20px;
+	}
+	.row > div:first-child{
+		background:url("../img/white-label.jpeg") center bottom no-repeat;
+		background-size: cover;
+		min-height: 50vh;
+		display: none;
+
+		.overlay{
+				display: block;
+				background: rgba($primary,0.5);
+				min-height: inherit;
+				margin:0 -15px;
+			}
+	}
+}
+
+.subscribe{
+	background:url("../img/banner-bg.jpg") center center no-repeat;
+	background-size: cover;
+	padding: 30px;
+	
+	h4{color: $secondary;}
+
+		
+
+		.btn-outline-secondary, .form-control{
+			border:2px solid rgba($secondary,0.75) !important;
+			color:rgba($secondary,0.75);
+			background: transparent;
+			height: 50px ;
+		}
+			
+		.form-control{
+			color:white !important;
+			text-align: left;
+		}
+
+		.btn-outline-secondary:hover{
+			border:2px solid rgba($secondary,0.75) !important;
+			background-color:rgba($secondary,0.75) !important;
+			color:$black !important;
+			
+		}
+
+	.row div{
+		
+		label{
+			color:$secondary;
+		}
+		
+	}
+	
+
+	#mc_embed_signup{
+		background: transparent!important; 
+	}
+}
+
+.thankyou{
+	height:100vh;
+	background:	 url('../img/BG.jpg') top center no-repeat;
+	display: block;
+	color: rgba($secondary,0.85);
+
+	.overlay{
+		background: rgba($black,0.65);
+		height: inherit;
+		padding: 10% 0; 
+	}
+
+	h1, h3, p{
+		color: rgba($secondary,0.75);
+	}
+
+	img{
+		max-width: 320px;
+	}
+
+	p{
+		color:$secondary;
+		text-align: center !important;
+		
+	}
+	
+	h4{color: $secondary;}
+
+		
+
+		.btn-outline-secondary, .form-control{
+			border:2px solid rgba($secondary,0.75) !important;
+			color:rgba($secondary,0.75);
+			background: transparent;
+			height: 50px ;
+		}
+			
+		.form-control{
+			color:white !important;
+			text-align: left;
+		}
+
+		.btn-outline-secondary:hover{
+			border:2px solid rgba($secondary,0.75) !important;
+			background-color:rgba($secondary,0.75) !important;
+			color:$black !important;
+			
+		}
+
+	.row div{
+		
+		label{
+			color:$secondary;
+		}
+		
+	}
+	
+
+	#mc_embed_signup{
+		background: transparent!important; 
+	}
+}
+
+footer{
+	background: $primary;
+	color:$white;
+	padding:30px;
+	text-align:center;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { 
+
+	header.cover{
+	height:100vh;
+	background:	 url('../img/BG.jpg') top center no-repeat;
+	display: block;
+	color: rgba($secondary,0.85);
+
+	.overlay{
+		background: rgba($black,0.65);
+		height: inherit;
+		padding: 10% 0; 
+	}
+
+	h1, h3, p{
+		color: rgba($secondary,0.75);
+	}
+
+	img{
+		max-width: 320px;
+	}
+
+	.btn-outline-secondary{
+		border:2px solid rgba($secondary,0.75);
+		color:rgba($secondary,0.75);
+		margin-right:15px;
+		margin-left:15px;
+	}
+
+	.btn-outline-secondary:hover{
+		border:2px solid rgba($secondary,0.75) !important;
+		background-color:rgba($secondary,0.75) !important;
+		color:$black !important;
+	}
+}
+.section-content{
+		padding:50px;
+
+		img{
+			display: none !important;
+			width: 100%
+
+		}
+	} 
+
+	.consumer{
+	h2,.section-content{
+		color: darken($secondary,50%);
+	}
+
+	ol, ul, dl{
+		padding-left:20px;
+	}
+	.row > div:last-child{
+		background:url("../img/home.jpeg") center center no-repeat;
+		background-size: cover;
+		min-height: 50vh;
+		display: block;
+
+			.overlay{
+				display: block;
+				background: rgba($secondary,0.5);
+				min-height: inherit;
+				margin:0 -15px;
+			}
+	}
+}
+
+.white-label{
+	h2,.section-content{
+		color: darken($primary,20%);
+	}
+	ol, ul, dl{
+		padding-left:20px;
+	}
+	.row > div:first-child{
+		background:url("../img/white-label.jpeg") center bottom no-repeat;
+		background-size: cover;
+		min-height: 50vh;
+		display: block;
+
+		.overlay{
+				display: block;
+				background: rgba($primary,0.5);
+				min-height: inherit;
+				margin:0 -15px;
+			}
+	}
+}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) { 
+.section-content{
+		padding:50px;
+
+		img{
+			display: none !important;
+			width: 100%
+
+		}
+	}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) { 
+.section-content{
+		padding:50px;
+
+		img{
+			display: none !important;
+			width: 100%
+
+		}
+	}
+}
